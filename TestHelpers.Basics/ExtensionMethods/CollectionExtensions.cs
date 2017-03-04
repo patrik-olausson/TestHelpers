@@ -22,7 +22,7 @@ namespace TestHelpers.Basics
         /// "Safe" version of ForEach that checks if the collection is null before trying 
         /// to iterate it.
         /// </summary>
-        public static void ForEach<T>(this IReadOnlyCollection<T> items, Action<T> action)
+        public static void ForAll<T>(this IReadOnlyCollection<T> items, Action<T> action)
         {
             if (items == null) return;
 
